@@ -1,0 +1,92 @@
+<main>
+    <div class="aboutDev">
+        <div class="devData">
+            <img ng-src="{{data.thumb}}" class="img-dev" title="photo_{{data.name}}" />
+            <h1 class="dev-name">{{data.name}}</h1>
+            <h2 class="profession">{{data.profession}}</h2>           
+        </div>
+        <aside class="historyDev">
+            <nav>
+                <!--profile-->
+                <section>
+                    <i class="container fa fa-user fa-2x"></i>
+                    <label>{{data.profile.title}}</label>
+                    <p>{{data.profile.description}}</p>
+                </section>
+
+                <!--objective-->
+                <section>
+                    <i class="container fa fa-leaf fa-2x"></i>
+                    <label>{{data.objective.title}}</label>
+                    <p>{{data.objective.description}}</p>
+                </section>
+
+                <!--personal skills-->
+                <section>
+                    <i class="container fa fa-bolt fa-2x"></i>
+                    <label>{{data.personalSkill.title}}</label>
+                    <ul class="personalSkills">
+                        <li ng-repeat="skill in data.personalSkill track by $index">
+                            {{skill}}
+                         </li>
+                    </ul>
+                </section>
+
+                <!--contact me-->
+                <section>
+                    <i class="container fa fa-vcard fa-2x"></i>
+                    <label>{{data.contactMe.title}}</label>
+                    <ul class="contact">
+                        <li><i class="fa fa-map-marker"></i>{{data.contactMe.address}}</li>
+                        <li><i class="fa fa-phone"></i>{{data.contactMe.tel}}</li>
+                        <li><i class="fa fa-envelope"></i>{{data.contactMe.email}}</li>
+                        <li><i class="fa fa-dribbble"></i>{{data.contactMe.webSite}}</li>
+                    </ul>
+                </section>
+            </nav>
+        </aside>         
+    </div>
+
+    <div class="mySkills">
+        <aside class="skillsDev">
+            <nav>
+                <!--profile-->
+                <section>
+                    <i class="container fa fa-user fa-4x"></i>
+                    <label>{{data.profile.title}}</label>
+                    <p>{{data.profile.description}}</p>
+                </section>
+
+                <!--objective-->
+                <section>
+                    <i class="container fa fa-leaf fa-2x"></i>
+                    <label>{{data.objective.title}}</label>
+                    <p>{{data.objective.description}}</p>
+                </section>
+
+                <!--personal skills-->
+                <section>
+                    <i class="container fa fa-bolt fa-4x"></i>
+                    <label>{{data.personalSkill.title}}</label>
+                    <ul class="personalSkills">
+                        <li ng-repeat="skill in data.personalSkill track by $index">
+                            {{skill}}
+                         </li>
+                    </ul>
+                </section>
+
+                <!--contact me-->
+                <section>
+                    <i class="container fa fa-vcard fa-3x"></i>
+                    <label>{{data.contactMe.title}}</label>
+                    <ul class="contact">
+                        <li><i class="fa fa-map-marker"></i>{{data.contactMe.address}}</li>
+                        <li><i class="fa fa-phone"></i>{{data.contactMe.tel}}</li>
+                        <li><i class="fa fa-envelope"></i>{{data.contactMe.email}}</li>
+                        <li><i class="fa fa-dribbble"></i>{{data.contactMe.webSite}}</li>
+                    </ul>
+                </section>
+            </nav>
+        </aside>
+    </div>
+</main>

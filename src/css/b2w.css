@@ -1,0 +1,107 @@
+html {
+    font-family: 'Open Sans', sans-serif;    
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 1200px;
+}
+
+.aboutDev {
+    position: relative;
+    width: 46.4%;
+    background: #49c5b1;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    width: 53.6%;
+    background: #FFF;
+}
+
+.devData {
+    position: absolute;
+    right: 7em;
+}
+
+.historyDev {
+    display: flex;
+    position: absolute;
+    top: 310px;
+    width: 350px;
+    right: 2em;
+    height: auto;
+}
+
+.img-dev {
+    border-radius: 10% 0 10% 0;
+    height: 180px;
+    width: 180px;
+}
+
+.dev-name {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;
+    margin: .3em 0;
+}
+
+.profession {
+    text-align: center;
+    font-weight: bold;
+}
+
+nav > section {
+    display: inline-block;
+}
+
+nav {
+    position: absolute;
+    color: #FFF;
+    display: block;
+    padding-top: 1rem;
+}
+
+    nav > section label {
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 2rem 1em;
+        letter-spacing: 0.1ch;
+        font-size: 1.5em;
+    }
+
+    nav > section p {
+        text-align: justify;
+        margin-bottom: 2.9em;
+        margin-top: .5em;
+        font-size: .9em;
+        line-height: 1.4em;
+    }
+
+ul.personalSkills {
+    margin-bottom: 2.9em;    
+}
+
+i.container {
+    width: 65px;
+    padding: 1.1rem;
+    box-sizing: border-box;
+    background-color: #FFF;
+    color:#49c5b1;
+    border-radius: 10% 0 10% 0;
+    text-align: center;
+}
+
+ul.contact li i {
+    width: 15px;
+    margin-right: 1.5em;
+    margin-top: .3em;
+}
