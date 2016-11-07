@@ -6,6 +6,17 @@ b2w.service('AboutService', function($http) {
         $http.get(API)
         .success(data => {
             if (data) {
+                var objs = [];                
+                for (let x in data.personalSkill) {
+                    if (x.toUpperCase() != "TITLE") {
+                        var obj = {};
+                        obj['toolName'] = x.toUpperCase();
+                        obj['toolSkill'] = data.personalSkill[x];
+                        objs.push(obj);
+                        //TODO: remove current value
+                    }
+                }
+                data.personalSkill.skills = objs;
                 cb(data);
             }
         })

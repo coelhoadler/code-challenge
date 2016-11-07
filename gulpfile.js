@@ -43,6 +43,8 @@ gulp.watch("src/**/*").on('change', function() {
     browserSync.reload();
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('src/scss/**/*.scss', ['sass']);
+gulp.watch("src/scss/**/*.scss").on("change", function(event) {
+  gulp.src(event.path)
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest("src/css"))
 });

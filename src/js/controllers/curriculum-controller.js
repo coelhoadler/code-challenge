@@ -5,7 +5,6 @@ function($scope, aboutSrv) {
 
     // getting user data
     aboutSrv.getData((data) => {
-        console.log("aqui no call", data);
         $scope.data = data;
     });
 
